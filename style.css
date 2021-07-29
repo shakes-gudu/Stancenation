@@ -1,0 +1,222 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  background-image: url(Images/bg.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100%;
+  text-align: center;
+}
+
+/* Banner */
+
+.banner {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  background-color: black;
+  padding: 20px;
+  z-index: -2;
+}
+.banner img {
+  width: 150px;
+  padding: 20px;
+  margin-right: 50px;
+}
+.banner nav {
+  margin-top: 30px;
+}
+.banner nav a {
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* Cover Page */
+
+.cover-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  width: 94.5%;
+  margin: 25px;
+  padding: 10px;
+  /* mix-blend-mode: lighten; */
+  height: 500px;
+}
+.cover-page img {
+  width: 250px;
+  justify-self: center;
+  margin: 10px auto;
+  border: 1px solid black;
+  border-radius: 50%;
+  /* border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px; */
+}
+.input {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.email {
+  width: 50%;
+  justify-self: center;
+  margin-left: 100px;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 20px;
+}
+.Password {
+  width: 50%;
+  justify-self: center;
+  margin-left: 100px;
+  margin-top: 5px;
+  padding: 5px;
+  color: black;
+  border-radius: 20px;
+}
+.button {
+  width: 30%;
+  justify-self: center;
+  margin-left: 138px;
+  margin-top: 5px;
+  padding: 5px;
+  border-radius: 30px;
+  border-color: whitesmoke;
+  background-color: black;
+  color: whitesmoke;
+}
+
+/* Section (About) */
+
+.about {
+  margin: 0 auto;
+  color: rgb(0, 0, 0);
+  z-index: 1000px;
+}
+.about h2 {
+  text-transform: uppercase;
+  font-size: 2em;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  text-decoration: underline;
+  color:black;
+  pointer-events: none;
+}
+.a-1 {
+  display: flex;
+  flex-direction: column;
+}
+.a-2 {
+  display: flex;
+  flex-direction: column;
+}
+.para {
+  font-size: 15px;
+  font-style: oblique;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding: 20px;
+  margin: 6px 10px;
+  background: blur(5px) insert 1;
+  border: 2px solid rgb(0, 0, 0);
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  pointer-events: none;
+}
+.pi {
+  margin: 30px;
+  border-radius: 30px;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+  background: 100% black;
+  color: whitesmoke;
+  padding: 10px;
+}
+.footer h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: fantasy;
+  text-decoration: underline;
+}
+.footer p {
+  font-size: 15px;
+  font-style: italic;
+  font-family: monospace;
+  margin: 5px auto;
+}
+.footer p a {
+  font-weight: 900;
+  text-decoration: wavy;
+}
+.contact-panel {
+  display: flex;
+  flex-direction: row;
+  margin: 0px auto;
+}
+.icons {
+  width: 100px;
+}
+
+/*Mediea queries*/
+
+@media all and (min-width: 600px) {
+  /* Banner */
+
+  .banner img {
+    width: 300px;
+  }
+  .banner nav {
+    margin-top: 50px;
+    margin-right: 20px;
+  }
+  .banner nav a {
+    margin-right: 30px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .cover-page img {
+    width: 400px;
+  }
+  .email {
+    margin: 0px auto;
+    width: 400px;
+  }
+  .Password {
+    margin: 0px auto;
+    width: 400px;
+  }
+  .button {
+    margin: 0px auto;
+    width: 200px;
+    border-color: whitesmoke;
+    background-color: black;
+    color: whitesmoke;
+  }
+  .para{
+      font-size: 20px;
+  }
+  .contact-panel{
+      margin: 0px 450px;
+  }
+
+}
