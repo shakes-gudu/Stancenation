@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-}
+ }
 body {
   height: 100%;
   margin: 0;
@@ -14,6 +14,9 @@ body {
   background-position: center center;
   height: 100%;
   text-align: center;
+  overflow: hidden;
+  position: relative;
+  transition: all 1s ease-in-out ;
 }
 
 /* Banner */
@@ -23,9 +26,12 @@ body {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  background-color: black;
-  padding: 20px;
-  z-index: -2;
+  background-color: rgba(82, 82, 82, 0.418);
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all 1s ease-in-out;
 }
 .banner img {
   width: 150px;
@@ -34,6 +40,7 @@ body {
 }
 .banner nav {
   margin-top: 30px;
+  transition: 1s linear;
 }
 .banner nav a {
   text-decoration: none;
@@ -48,50 +55,47 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   color: white;
   font-size: 15px;
   text-align: center;
-  width: 94.5%;
-  margin: 25px;
+  width: 100%;
+  margin: 32px auto;
   padding: 10px;
-  /* mix-blend-mode: lighten; */
-  height: 500px;
+  height: 100vh;
+  transition: all 1s ease-in-out;
 }
 .cover-page img {
-  width: 250px;
-  justify-self: center;
+  width: 100%;
   margin: 10px auto;
   border: 1px solid black;
   border-radius: 50%;
-  /* border-bottom-left-radius: 30px;
-    border-top-right-radius: 30px; */
 }
 .input {
   display: flex;
-  justify-content: center;
+  margin: 10px auto;
   flex-direction: column;
   gap: 10px;
+  padding: 10px;
+  width: 100%;
 }
 .email {
-  width: 50%;
-  justify-self: center;
+  width: 100%;
   margin-left: 100px;
   margin-top: 10px;
-  padding: 5px;
+  padding: 7px;
   border-radius: 20px;
 }
 .Password {
   width: 50%;
-  justify-self: center;
   margin-left: 100px;
   margin-top: 5px;
-  padding: 5px;
+  padding: 7px;
   color: black;
   border-radius: 20px;
 }
 .button {
-  width: 30%;
-  justify-self: center;
+  width: 50%;
   margin-left: 138px;
   margin-top: 5px;
   padding: 5px;
@@ -105,8 +109,10 @@ body {
 
 .about {
   margin: 0 auto;
+  padding: 20px;
   color: rgb(0, 0, 0);
   z-index: 1000px;
+  transition: all 1s ease-in-out;
 }
 .about h2 {
   text-transform: uppercase;
@@ -115,7 +121,7 @@ body {
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
   text-decoration: underline;
-  color:black;
+  color: rgb(170, 170, 170);
   pointer-events: none;
 }
 .a-1 {
@@ -128,15 +134,18 @@ body {
 }
 .para {
   font-size: 15px;
-  font-style: oblique;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-style: italic;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   padding: 20px;
   margin: 6px 10px;
   background: blur(5px) insert 1;
-  border: 2px solid rgb(0, 0, 0);
+  border: 2px solid rgb(73, 0, 0);
   border-bottom-left-radius: 30px;
   border-top-right-radius: 30px;
   pointer-events: none;
+  background-color: rgba(240, 248, 255, 0.5);
+  line-height: 1.7;
+  letter-spacing: 0,04;
 }
 .pi {
   margin: 30px;
@@ -146,11 +155,12 @@ body {
 /* Footer */
 
 .footer {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
   background: 100% black;
   color: whitesmoke;
   padding: 10px;
+  transition: all 1s ease-in-out;
 }
 .footer h3 {
   font-size: 2rem;
@@ -174,49 +184,5 @@ body {
   margin: 0px auto;
 }
 .icons {
-  width: 100px;
-}
-
-/*Mediea queries*/
-
-@media all and (min-width: 600px) {
-  /* Banner */
-
-  .banner img {
-    width: 300px;
-  }
-  .banner nav {
-    margin-top: 50px;
-    margin-right: 20px;
-  }
-  .banner nav a {
-    margin-right: 30px;
-    font-size: 20px;
-    font-weight: 700;
-  }
-  .cover-page img {
-    width: 400px;
-  }
-  .email {
-    margin: 0px auto;
-    width: 400px;
-  }
-  .Password {
-    margin: 0px auto;
-    width: 400px;
-  }
-  .button {
-    margin: 0px auto;
-    width: 200px;
-    border-color: whitesmoke;
-    background-color: black;
-    color: whitesmoke;
-  }
-  .para{
-      font-size: 20px;
-  }
-  .contact-panel{
-      margin: 0px 450px;
-  }
-
+  width: 100%;
 }

@@ -1,0 +1,72 @@
+/*Mediea queries*/
+@media all and (max-width: 500px) {
+    .banner{
+        display: none;
+    }
+}
+@media all and (max-height: 1000px) {
+  /* Banner */
+
+  .banner img {
+    width: 200px;
+    max-height: 10rem;
+  }
+  .banner nav {
+    justify-self: flex-end;
+  }
+  .banner nav a {
+    margin: 50px 10px;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .cover-page {
+    height: 90vh;
+    margin: 0 auto;
+  }
+  .cover-page img {
+    width: 100%;
+    max-width: 50ch;
+  }
+  .email {
+    margin: 0px auto;
+    width: 100%;
+    max-width: 50ch;
+  }
+  .Password {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 50ch;
+}
+.button {
+    margin: 20px auto;
+    width: 50%;
+    border-color: whitesmoke;
+    background-color: black;
+    color: whitesmoke;
+    max-width: 50ch;
+  }
+  .icons {
+    width: 100%;
+    max-width: 20ch;
+    margin: auto 10px;
+  }
+
+  .para {
+    margin: 10px auto;
+    max-width: 70ch;
+    text-align: center;
+    line-height: 1.7;
+    letter-spacing: 0.04rem;
+    font-size: 1.2rem;
+  }
+  .pi {
+    width: 100%;
+    max-width: 100ch;
+    margin: 10px auto;
+  }
+  h2 {
+    max-width: 50ch;
+    margin: 3rem auto;
+  }
+}
+
