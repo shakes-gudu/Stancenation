@@ -1,0 +1,22 @@
+
+.loader {
+  position: absolute;
+  top: 15rem;
+  left: 7rem;
+  width: 10rem;
+  height: 10rem;
+  text-align: center;
+  border: 2px solid white;
+  background-color: black;
+  transition: box-shadow 1s ease-in;
+  animation: fade-in 1.5s ease-in-out .5s alternate-reverse infinite;
+}
+
+@keyframes fade-in {
+  to{
+    box-shadow: 20px 0px white, 
+    40px 0px black, 
+    60px 0px white,
+    80px 0px black;
+  }
+}

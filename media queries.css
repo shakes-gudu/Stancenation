@@ -70,3 +70,9 @@
   }
 }
 
+@media all and (min-width: 600px) {
+  .loader{
+    top: 50%;
+    left: 60%;
+  }
+}
